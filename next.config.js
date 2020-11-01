@@ -6,16 +6,16 @@ module.exports = withSvgr({
     importLoaders: 1,
     localIdentName: '[local]___[hash:base64:5]',
   },
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.(png|jpg|svg|gif|eot|ttf|woff|woff2)$/,
-      use: {
-        loader: 'url-loader',
-        options: {
-          limit: 100000,
-        },
-      },
-    });
-    return config;
-  },
+  // webpack(config) {
+  //   config.module.rules.push({
+  //     test: /\.(png|jpg|svg|gif|eot|ttf|woff|woff2)$/,
+  //     use: {
+  //       loader: 'url-loader',
+  //       options: {
+  //         limit: 100000,
+  //       },
+  //     },
+  //   });
+  //   return config;
+  // },
 });

@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -15,6 +16,6 @@
   },
   "devDependencies": {
     "next-svgr": "^0.0.2",
-    "url-loader": "^4.1.0"
+    "url-loader": "^4.1.1"
   }
 }
