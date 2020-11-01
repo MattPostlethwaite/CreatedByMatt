@@ -1,0 +1,11 @@
+.Projects {
+  margin-top: 100px;
+
+  .ProjectWrap {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 240px;
+    margin-top: 20px;
+  }
+}
