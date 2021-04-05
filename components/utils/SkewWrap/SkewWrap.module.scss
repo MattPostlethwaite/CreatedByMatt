@@ -9,7 +9,7 @@ $skewAmount: 2deg;
   border-radius: 10px 20px;
   margin: 0 20px;
   overflow: hidden;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   .SkewCounter {
     transform: skewY(-$skewAmount);
