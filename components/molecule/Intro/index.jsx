@@ -1,21 +1,20 @@
-import React from 'react';
-import cx from 'classnames';
+import cx from "classnames";
 
 // styling
-import styles from './Intro.module.scss';
+import styles from "./Intro.module.scss";
 
 // Assets
-import Dribbble from '../../../assets/brands/dribbble.svg';
-import LinkedIn from '../../../assets/brands/linkedin.svg';
-import Twitter from '../../../assets/brands/twitter.svg';
-import CodePen from '../../../assets/brands/codepen.svg';
-import Instagram from '../../../assets/brands/instagram.svg';
+import Dribbble from "../../../assets/brands/dribbble.svg";
+import LinkedIn from "../../../assets/brands/linkedin.svg";
+import Twitter from "../../../assets/brands/twitter.svg";
+import CodePen from "../../../assets/brands/codepen.svg";
+import Instagram from "../../../assets/brands/instagram.svg";
 
 const Intro = () => {
   return (
     <div className={styles.Intro}>
       <h1>
-        Hi, I'm{' '}
+        Hi, I'm{" "}
         <span className={styles.Name}>
           Matt Postlethwaite <span className={styles.Wave}>👋</span>
         </span>

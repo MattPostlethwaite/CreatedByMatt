@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import Link from "next/link";
 // Styling
-import styles from './Button.module.scss';
+import styles from "./Button.module.scss";
 
 const Button = ({ href, as, onClick, children }) => {
   return href ? (
