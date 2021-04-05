@@ -1,0 +1,73 @@
+@import '../../../global/styles/base/index.scss';
+
+.Intro {
+  padding-top: 200px;
+
+  @media only screen and (max-width: 600px){
+    padding-top: 100px;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.4em;
+    line-height: 1.6em;
+    margin: 0;
+
+    @media only screen and (max-width: 600px){
+      font-size: 1.8em;
+    }
+  }
+
+  .Name {
+    color: $secondary-bg;
+
+    .Wave {
+      display: inline-block;
+    }
+
+    &:hover {
+      .Wave {
+        animation-name: wave;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 0.25s;
+      }
+    }
+  }
+
+  .SocialLink {
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.25s ease-in-out;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: $white;
+
+      * {
+        fill: $white;
+      }
+
+    }
+    &.Twitter path {
+      fill: $navy;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.1) rotate(-10deg);
+    }
+  }
+}
+
+@keyframes wave {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}

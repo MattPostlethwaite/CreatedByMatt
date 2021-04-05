@@ -1,0 +1,10 @@
+@import '../../../global/styles/base/index.scss';
+
+.Button {
+  background-color: $secondary-bg;
+  color: $secondary-txt;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 20px;
+}

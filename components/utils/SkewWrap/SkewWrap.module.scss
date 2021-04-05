@@ -1,0 +1,17 @@
+@import '../../../global/styles/base/index.scss';
+
+$skewAmount: 2deg;
+
+.SkewWrap {
+  height: 90vh;
+  background-color: $primary-bg;
+  transform: skewY($skewAmount);
+  border-radius: 10px 20px;
+  margin: 0 20px;
+  overflow: hidden;
+  // overflow-y: scroll;
+
+  .SkewCounter {
+    transform: skewY(-$skewAmount);
+  }
+}
