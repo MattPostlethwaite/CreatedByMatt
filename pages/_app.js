@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 // Components
 import MainWrap from "../components/utils/MainWrap";
-import SkewWrap from "../components/utils/SkewWrap";
+
+// Context
+import { AppProvider } from "../components/utils/AppContext.js";
+
 // Styling
 import "../global/styles/index.scss";
 
@@ -37,7 +40,7 @@ export default function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <>
+    <AppProvider>
       <Head>
         <title>{siteTitle}</title>
         <link
@@ -52,10 +55,8 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
 
       <MainWrap>
-        <SkewWrap>
-          <Component {...pageProps} />
-        </SkewWrap>
+        <Component {...pageProps} />
       </MainWrap>
-    </>
+    </AppProvider>
   );
 }

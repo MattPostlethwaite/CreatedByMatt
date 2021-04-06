@@ -1,0 +1,44 @@
+.OnAir {
+  .light {
+    display: inline-block;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 10px red;
+    transform: scale(1);
+  }
+
+  p {
+    padding: 0 10px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: 0 0 10px red;
+    color: red;
+    line-height: 10px;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}

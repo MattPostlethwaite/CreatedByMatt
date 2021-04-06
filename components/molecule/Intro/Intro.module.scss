@@ -1,9 +1,9 @@
-@import '../../../global/styles/base/index.scss';
+@import "../../../global/styles/base/index.scss";
 
 .Intro {
   padding-top: 200px;
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 600px) {
     padding-top: 100px;
   }
 
@@ -13,7 +13,7 @@
     line-height: 1.6em;
     margin: 0;
 
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 600px) {
       font-size: 1.8em;
     }
   }
@@ -49,7 +49,6 @@
       * {
         fill: $white;
       }
-
     }
     &.Twitter path {
       fill: $navy;
@@ -59,15 +58,13 @@
     &:focus,
     &:active {
       transform: scale(1.1) rotate(-10deg);
-    }
-  }
-}
 
-@keyframes wave {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(30deg);
+      svg * {
+        fill: $secondary-bg;
+      }
+      &.Twitter path {
+        fill: $navy;
+      }
+    }
   }
 }

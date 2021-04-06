@@ -1,0 +1,26 @@
+@keyframes wiggle {
+  from {
+    transform: skewY(1deg);
+  }
+  to {
+    transform: skewY(10deg);
+  }
+}
+
+@keyframes wobble {
+  from {
+    transform: rotate3d(0, 0, 0);
+  }
+  to {
+    transform: rotate3d(1, 1, 1, 10deg);
+  }
+}
+
+@keyframes wave {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}

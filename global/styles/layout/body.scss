@@ -1,5 +1,6 @@
 html {
   font-size: 100%;
+  background-color: $secondary-bg;
 }
 
 html,
@@ -9,7 +10,9 @@ body {
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   background-color: $secondary-bg;
   color: $primary-txt;
+  width: 100vw;
+  height: 100vh;
 }
